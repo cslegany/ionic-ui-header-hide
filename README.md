@@ -1,0 +1,1 @@
+# ionic-ui-header-hide
