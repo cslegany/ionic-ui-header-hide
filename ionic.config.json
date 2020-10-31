@@ -1,0 +1,7 @@
+{
+  "name": "ionic-hideheader",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

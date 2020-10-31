@@ -1,0 +1,29 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar #toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home" shape="round">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="share"></ion-icon>
+      </ion-button>
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" scrollEvents="true" [appFadeHeader]="toolbar">
+  <!-- <ion-content [fullscreen]="true" scrollEvents="true" [appHideHeader]="toolbar"> -->
+  <img src="assets/academy.jpg">
+
+  <ion-card *ngFor="let i of [1,2,3,4,5,6,7,8,9]">
+    <ion-card-header>
+      <ion-card-title>{{i}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>
